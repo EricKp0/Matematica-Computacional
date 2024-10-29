@@ -5,14 +5,12 @@ def triangulos_nao_semelhantes():
     print("Os triângulos não são semelhantes!")
 
 def criterioLAL(a, b, c, d, f, g):
-    # Verifica se dois lados são proporcionais e o ângulo entre eles é congruente
     if a / b == c / d and f == g:
         triangulos_semelhantes()
     else:
         triangulos_nao_semelhantes()
 
 def criterioAA(ang1, ang2, ang3, ang4):
-    # Verifica se pelo menos dois ângulos são congruentes
     if ang1 == ang3 and ang2 == ang4:
         triangulos_semelhantes()
     elif ang1 == ang4 and ang2 == ang3:
@@ -21,7 +19,6 @@ def criterioAA(ang1, ang2, ang3, ang4):
         triangulos_nao_semelhantes()
 
 def criterioLLL(a, b, c, d, e, f):
-    # Verifica se todos os lados são proporcionais
     if a / d == b / e == c / f:
         triangulos_semelhantes()
     else:
